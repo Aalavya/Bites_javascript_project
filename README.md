@@ -23,7 +23,7 @@ Ready to start cooking with Bites? Here's how:
    ```
    git clone https://github.com/https://github.com/Aalavya/Bites_javascript_project
    ```
-
+   
 2. **Install Dependencies**:
    ```
    npm install

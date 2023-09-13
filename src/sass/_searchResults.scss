@@ -1,0 +1,53 @@
+/* The `.search-results` class is defining the styling for a container element that will display search
+results. */
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+/* The code block `.results` is defining the styling for a list element that will contain search
+results. It sets the `list-style` property to `none`, which removes the default bullet points or
+numbering from the list items. It also adds a `margin-bottom` of `2rem` to create some spacing
+between the list and other elements. */
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+/* The code block `.pagination` is defining the styling for a pagination component. */
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3.5rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev {
+      float: left;
+    }
+    &--next {
+      float: right;
+    }
+  }
+}
+/* The code block `.copyright` is defining the styling for a copyright section. It sets the text color
+to `-grey-dark-2`, which is a variable that represents a specific shade of grey. It also sets
+the font size to `1.2rem`, adds padding of `0 3.5rem` to create some spacing around the content, and
+sets a top margin of `4rem` to create some vertical spacing. */
+
+.copyright {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  padding: 0 3.5rem;
+  margin-top: 4rem;
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: $color-grey-dark-2;
+  }
+}
